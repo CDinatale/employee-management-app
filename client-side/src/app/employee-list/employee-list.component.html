@@ -1,0 +1,13 @@
+<h1>Employees</h1>
+
+<div *ngFor="let employee of employees">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{employee.EmployeeName}}</mat-card-title>
+      <mat-card-subtitle>{{employee.Position}}</mat-card-subtitle>
+      <button class="trashBtn" (click)="deleteEmployee(employee)" >
+        <fa-icon class="trashIcon" [icon]="faTrashAlt"></fa-icon>
+      </button>
+    </mat-card-header>
+  </mat-card>
+</div>

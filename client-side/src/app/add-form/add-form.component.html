@@ -1,0 +1,14 @@
+<div class="form-style-2">
+  <div class="form-style-2-heading">Personal Information</div>
+  <form [formGroup]="addForm">
+    <label for="field1"><span>Full Name </span><input type="text" class="input-field" name="field1" formControlName="EmployeeName" /></label>
+    <label for="field2"><span>Address</span><input type="text" class="input-field" name="field2" value="" formControlName="EmployeeAddress" /></label>
+    <label for="field3"><span>Phone Number</span><input type="text" class="input-field" name="field3" value="" formControlName="PhoneNumber"/></label>
+    <label for="field4"><span>Position</span><select name="field4" class="select-field" formControlName="Position">
+        <option value="Full Stack Developer">Full Stack Developer</option>
+        <option value="Manager">Manager</option>
+        <option value="Creative Director">Creative Director</option>
+      </select></label>
+    <label><span> </span><input type="button" value="+ Add new" (click)="addEmployee()" /></label>
+  </form>
+</div>

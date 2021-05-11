@@ -1,0 +1,16 @@
+.card{
+  margin-bottom: 15px;
+  max-width: 320px;
+  background-color: lightgray;
+  flex-direction: row;
+}
+
+.trashBtn{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+}
+
+.trashIcon{
+  font-size: 19px;
+}
